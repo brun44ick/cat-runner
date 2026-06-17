@@ -23,14 +23,14 @@ header {
 }
 
 footer {
-    padding: 20px 40px;
+    padding: 20px 100px 15px 40px;
     justify-content: space-between;
     background-color: rgb(30, 65, 60);
 }
 
 /* секции */
 .main-page {
-    margin: 50px 0 50px 0;
+    margin: 30px 0 50px 0;
     padding: 10px 0px 10px 90px;
 }
 
@@ -46,15 +46,18 @@ footer {
 }
 
 .to-start {
-    color: white;
+    max-width: 900px;
+    margin: 50px 50px 60px 110px;
+    padding: 60px;
+    background: rgb(0, 185, 160);
+    border-radius: 32px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* section div */
 .to-start div {
-    justify-content: center;
-    text-align: left;
+    align-items: flex-start;
     width: 70%;
-    border-radius: 8px;
 }
 
 .process-list {
@@ -65,6 +68,10 @@ footer {
     margin-top: 25px;
 }
 
+.ready-game {
+    margin-bottom: 10px;
+}
+
 /* article */
 article {
     display: flex;
@@ -72,6 +79,12 @@ article {
     padding: 20px 30px;
     border: 0.2px solid rgba(128, 128, 128, 0.288);
     border-radius: 15px;
+    transition: transform 0.2s linear;
+}
+
+article:hover {
+    transform: translateY(-2px);
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 .process article {
@@ -82,9 +95,9 @@ article {
 
 .reasons article {
     margin: 10px 20px;
-    padding: 20px 25px;
+    padding: 22px 25px;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     align-items: start;
 }
 
@@ -98,17 +111,23 @@ article {
     font-family: "Baloo 2", "cursive";
     font-weight: bolder;
     color:black;
+    font-size: 1.3em;
 }
 
 h1 {
     font-weight: 800;
-    color:black;
+    color:rgb(0, 48, 42);
     margin: 20px 0px 10px 0px;
+}
+
+#ready {
+    color: white;
+    font-size: 2.3em;
 }
 
 h4 {
     font-weight: 700;
-    color:black;
+    color:rgb(0, 67, 52);
     margin: 0px 0px 5px 0px;
 }
 
@@ -122,12 +141,18 @@ p {
     font-weight: 800;
 }
 
+.copyright {
+    font-size: 0.7em;
+    font-weight: lighter;
+    transform: scale(1,1);
+}
+
 /* кнопки*/
 a {
     font-weight: bold;
     text-decoration: none;
     padding: 10px 15px;
-    border-radius: 17px;
+    border-radius: 15px;
 }
 
 nav a {
@@ -139,21 +164,46 @@ nav a {
     font-size: 20px;
 }
 
-.to-start {
-    margin-right:15px;
+.start-btn {
+    display: flex;
+    align-items: center;
     color: white;
     background-color: rgb(0, 185, 160);
+    transition: transform 0.2s linear;
+}
+
+.start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2)
 }
 
 .how-process {
+    margin-left: 14px;
     color: black;
     padding: 8px 13px;
     border: 2px solid rgba(0, 185, 160, 0.3);
+    transition: transform 0.2s linear;
+}
+
+.how-process:hover {
+    transform: translateY(-2px);
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 .to-menu {
+    padding: 12px 25px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
     background-color: white;
     color: rgb(0, 185, 160);
+    margin-top: 20px;
+    transition: transform 0.2s linear;
+}
+
+.to-menu:hover {
+    transform: translateY(-2px);
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* img */
@@ -164,8 +214,9 @@ img {
 }
 
 .cards {
+    margin-top: 28px;
     width: 50%;
-    max-width: 600px;
+    max-width: 550px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -178,13 +229,13 @@ img {
 
 .big {
     width: 100%;
-    height: 300px;
+    height: 249px;
 }
 
 .small {
     flex: 1;
     min-width: 250px;
-    height: 250px;
+    height: 249px;
 }
 
 .info {
@@ -213,4 +264,15 @@ span {
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
+}
+
+.gamepad-big {
+    padding: 10px;
+    margin: 20px 10px 0 0;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.249);
+}
+
+.gamepad {
+    margin-right: 5px;
 }
