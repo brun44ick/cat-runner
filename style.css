@@ -276,3 +276,13 @@ span {
 .gamepad {
     margin-right: 5px;
 }
+
+/* game */
+#game {
+    border: 1px solid black;
+}
+
+.game-section {
+    justify-content: center;
+    height: 80vh;
+}
